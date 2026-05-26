@@ -3,6 +3,7 @@ using System;
 using AcademiaAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcademiaAPI.Migrations
 {
     [DbContext(typeof(AcademiaContext))]
-    partial class AcademiaContextModelSnapshot : ModelSnapshot
+    [Migration("20260526223437_AlterarHorarioParaString")]
+    partial class AlterarHorarioParaString
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.8");
@@ -303,8 +306,7 @@ namespace AcademiaAPI.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Horario")
-                        .IsRequired()
+                    b.Property<TimeOnly>("Horario")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("IdInstrutor")
@@ -330,7 +332,7 @@ namespace AcademiaAPI.Migrations
                             IdTurma = 1,
                             CapacidadeMaxima = 30,
                             DiaSemana = "Segunda",
-                            Horario = "07:00:00",
+                            Horario = new TimeOnly(7, 0, 0),
                             IdInstrutor = 1,
                             Modalidade = "Musculação",
                             NomeTurma = "Musculação Manhã"
@@ -340,7 +342,7 @@ namespace AcademiaAPI.Migrations
                             IdTurma = 2,
                             CapacidadeMaxima = 20,
                             DiaSemana = "Quarta",
-                            Horario = "14:00:00",
+                            Horario = new TimeOnly(14, 0, 0),
                             IdInstrutor = 2,
                             Modalidade = "Yoga",
                             NomeTurma = "Yoga Tarde"

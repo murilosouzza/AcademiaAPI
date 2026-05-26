@@ -1,0 +1,2212 @@
+{
+  "info": {
+    "_postman_id": "13b1f0a6-9e28-43ce-9a70-441f50ca3e57",
+    "name": "AcademiaAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53502702",
+    "_collection_link": "https://go.postman.co/collection/53502702-13b1f0a6-9e28-43ce-9a70-441f50ca3e57?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "api",
+      "item": [
+        {
+          "name": "Alunos",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Alunos/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Alunos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Alunos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Alunos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Alunos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Alunos/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Alunos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Alunos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Alunos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Alunos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Alunos/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Alunos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Alunos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Alunos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Alunos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Alunos",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Alunos",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Alunos"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Alunos",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Alunos"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idAluno\": 2915,\n    \"nome\": \"string\",\n    \"cpf\": \"string\",\n    \"email\": \"string\",\n    \"telefone\": \"string\",\n    \"dataNascimento\": \"1991-07-17T15:44:51.492Z\",\n    \"ativo\": true,\n    \"matriculas\": [\n      {\n        \"idMatricula\": 9705,\n        \"dataInicio\": \"1975-12-07T16:34:40.928Z\",\n        \"dataFim\": \"1963-03-18T04:38:42.919Z\",\n        \"situacao\": \"string\",\n        \"valorPago\": 4622.465990931095,\n        \"idAluno\": 1226,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idPlano\": 3831,\n        \"plano\": {\n          \"idPlano\": 372,\n          \"nomePlano\": \"string\",\n          \"valorMensalidade\": 6926.347460691545,\n          \"duracaoMeses\": 8251,\n          \"incluiAulasColetivas\": true,\n          \"incluiAcompanhamentoNutricional\": false,\n          \"ativo\": true,\n          \"matriculas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"idMatricula\": 6627,\n        \"dataInicio\": \"2007-06-21T11:45:31.155Z\",\n        \"dataFim\": \"2004-02-10T19:50:12.388Z\",\n        \"situacao\": \"string\",\n        \"valorPago\": 8837.494230809758,\n        \"idAluno\": 5839,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idPlano\": 1600,\n        \"plano\": {\n          \"idPlano\": 7098,\n          \"nomePlano\": \"string\",\n          \"valorMensalidade\": 8710.15187107025,\n          \"duracaoMeses\": 6929,\n          \"incluiAulasColetivas\": false,\n          \"incluiAcompanhamentoNutricional\": true,\n          \"ativo\": true,\n          \"matriculas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            }\n          ]\n        }\n      }\n    ],\n    \"inscricoesTurma\": [\n      {\n        \"idInscricao_turma\": 1459,\n        \"dataInscricao\": \"2016-09-06T00:56:05.643Z\",\n        \"ativo\": true,\n        \"idAluno\": 2183,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idTurma\": 7271,\n        \"turma\": {\n          \"idTurma\": 8385,\n          \"nomeTurma\": \"string\",\n          \"modalidade\": \"string\",\n          \"diaSemana\": \"string\",\n          \"horario\": \"19:32:41.343Z\",\n          \"capacidadeMaxima\": 1950,\n          \"idInstrutor\": 4003,\n          \"instrutor\": {\n            \"idInstrutor\": 3155,\n            \"nome\": \"string\",\n            \"email\": \"string\",\n            \"especialidade\": \"string\",\n            \"dataContratacao\": \"1962-09-26T17:38:23.237Z\",\n            \"cref\": \"string\",\n            \"ativo\": true,\n            \"turmas\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              }\n            ]\n          },\n          \"inscricoesTurma\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"idInscricao_turma\": 7202,\n        \"dataInscricao\": \"1997-08-12T22:23:38.799Z\",\n        \"ativo\": false,\n        \"idAluno\": 4377,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idTurma\": 5689,\n        \"turma\": {\n          \"idTurma\": 7946,\n          \"nomeTurma\": \"string\",\n          \"modalidade\": \"string\",\n          \"diaSemana\": \"string\",\n          \"horario\": \"19:51:46.892Z\",\n          \"capacidadeMaxima\": 9308,\n          \"idInstrutor\": 7812,\n          \"instrutor\": {\n            \"idInstrutor\": 4714,\n            \"nome\": \"string\",\n            \"email\": \"string\",\n            \"especialidade\": \"string\",\n            \"dataContratacao\": \"2021-12-07T20:35:48.239Z\",\n            \"cref\": \"string\",\n            \"ativo\": true,\n            \"turmas\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              }\n            ]\n          },\n          \"inscricoesTurma\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            }\n          ]\n        }\n      }\n    ]\n  },\n  {\n    \"idAluno\": 2058,\n    \"nome\": \"string\",\n    \"cpf\": \"string\",\n    \"email\": \"string\",\n    \"telefone\": \"string\",\n    \"dataNascimento\": \"2006-05-10T09:34:54.966Z\",\n    \"ativo\": true,\n    \"matriculas\": [\n      {\n        \"idMatricula\": 201,\n        \"dataInicio\": \"1974-12-06T14:55:08.276Z\",\n        \"dataFim\": \"2009-09-22T09:25:25.130Z\",\n        \"situacao\": \"string\",\n        \"valorPago\": 1848.4380495334362,\n        \"idAluno\": 9752,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idPlano\": 2726,\n        \"plano\": {\n          \"idPlano\": 1995,\n          \"nomePlano\": \"string\",\n          \"valorMensalidade\": 6780.433931441205,\n          \"duracaoMeses\": 1976,\n          \"incluiAulasColetivas\": false,\n          \"incluiAcompanhamentoNutricional\": false,\n          \"ativo\": true,\n          \"matriculas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"idMatricula\": 6261,\n        \"dataInicio\": \"1980-11-08T10:10:27.788Z\",\n        \"dataFim\": \"1997-08-22T02:35:03.230Z\",\n        \"situacao\": \"string\",\n        \"valorPago\": 2398.562758193373,\n        \"idAluno\": 2724,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idPlano\": 8962,\n        \"plano\": {\n          \"idPlano\": 6918,\n          \"nomePlano\": \"string\",\n          \"valorMensalidade\": 8400.23451186159,\n          \"duracaoMeses\": 7219,\n          \"incluiAulasColetivas\": true,\n          \"incluiAcompanhamentoNutricional\": true,\n          \"ativo\": false,\n          \"matriculas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n            }\n          ]\n        }\n      }\n    ],\n    \"inscricoesTurma\": [\n      {\n        \"idInscricao_turma\": 8562,\n        \"dataInscricao\": \"2021-03-03T04:12:47.742Z\",\n        \"ativo\": false,\n        \"idAluno\": 7471,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idTurma\": 9239,\n        \"turma\": {\n          \"idTurma\": 8044,\n          \"nomeTurma\": \"string\",\n          \"modalidade\": \"string\",\n          \"diaSemana\": \"string\",\n          \"horario\": \"21:37:57.179Z\",\n          \"capacidadeMaxima\": 9199,\n          \"idInstrutor\": 2866,\n          \"instrutor\": {\n            \"idInstrutor\": 3783,\n            \"nome\": \"string\",\n            \"email\": \"string\",\n            \"especialidade\": \"string\",\n            \"dataContratacao\": \"2001-07-11T17:22:49.483Z\",\n            \"cref\": \"string\",\n            \"ativo\": true,\n            \"turmas\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              }\n            ]\n          },\n          \"inscricoesTurma\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            }\n          ]\n        }\n      },\n      {\n        \"idInscricao_turma\": 1293,\n        \"dataInscricao\": \"1957-03-03T14:17:26.270Z\",\n        \"ativo\": false,\n        \"idAluno\": 601,\n        \"aluno\": {\n          \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n        },\n        \"idTurma\": 6693,\n        \"turma\": {\n          \"idTurma\": 5903,\n          \"nomeTurma\": \"string\",\n          \"modalidade\": \"string\",\n          \"diaSemana\": \"string\",\n          \"horario\": \"19:02:16.465Z\",\n          \"capacidadeMaxima\": 9969,\n          \"idInstrutor\": 357,\n          \"instrutor\": {\n            \"idInstrutor\": 1580,\n            \"nome\": \"string\",\n            \"email\": \"string\",\n            \"especialidade\": \"string\",\n            \"dataContratacao\": \"2022-05-09T21:37:25.986Z\",\n            \"cref\": \"string\",\n            \"ativo\": false,\n            \"turmas\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n              }\n            ]\n          },\n          \"inscricoesTurma\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Alunos",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Alunos",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Alunos"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Alunos",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Alunos"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idAluno\": 6889,\n  \"nome\": \"string\",\n  \"cpf\": \"string\",\n  \"email\": \"string\",\n  \"telefone\": \"string\",\n  \"dataNascimento\": \"1983-09-09T07:35:17.316Z\",\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"idMatricula\": 1444,\n      \"dataInicio\": \"1996-07-18T02:00:46.124Z\",\n      \"dataFim\": \"1967-06-24T01:03:20.930Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 4562.317012020234,\n      \"idAluno\": 2247,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 6102,\n      \"plano\": {\n        \"idPlano\": 7725,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 3518.5544171259376,\n        \"duracaoMeses\": 1296,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": true,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idMatricula\": 9775,\n      \"dataInicio\": \"2008-08-13T00:45:20.937Z\",\n      \"dataFim\": \"1970-07-12T00:00:23.532Z\",\n      \"situacao\": \"string\",\n      \"valorPago\": 7445.054961383472,\n      \"idAluno\": 9249,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idPlano\": 8605,\n      \"plano\": {\n        \"idPlano\": 2954,\n        \"nomePlano\": \"string\",\n        \"valorMensalidade\": 7789.753395943003,\n        \"duracaoMeses\": 6521,\n        \"incluiAulasColetivas\": true,\n        \"incluiAcompanhamentoNutricional\": false,\n        \"ativo\": true,\n        \"matriculas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"inscricoesTurma\": [\n    {\n      \"idInscricao_turma\": 9990,\n      \"dataInscricao\": \"2019-12-14T04:39:41.974Z\",\n      \"ativo\": false,\n      \"idAluno\": 5833,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 6274,\n      \"turma\": {\n        \"idTurma\": 804,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"22:04:23.769Z\",\n        \"capacidadeMaxima\": 4148,\n        \"idInstrutor\": 5866,\n        \"instrutor\": {\n          \"idInstrutor\": 2718,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"1995-12-07T12:38:03.565Z\",\n          \"cref\": \"string\",\n          \"ativo\": false,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"idInscricao_turma\": 8500,\n      \"dataInscricao\": \"1987-11-24T22:49:53.300Z\",\n      \"ativo\": true,\n      \"idAluno\": 649,\n      \"aluno\": {\n        \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n      },\n      \"idTurma\": 2564,\n      \"turma\": {\n        \"idTurma\": 5404,\n        \"nomeTurma\": \"string\",\n        \"modalidade\": \"string\",\n        \"diaSemana\": \"string\",\n        \"horario\": \"14:00:58.270Z\",\n        \"capacidadeMaxima\": 628,\n        \"idInstrutor\": 3880,\n        \"instrutor\": {\n          \"idInstrutor\": 4263,\n          \"nome\": \"string\",\n          \"email\": \"string\",\n          \"especialidade\": \"string\",\n          \"dataContratacao\": \"2018-04-10T09:18:42.918Z\",\n          \"cref\": \"string\",\n          \"ativo\": true,\n          \"turmas\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n            }\n          ]\n        },\n        \"inscricoesTurma\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n          }\n        ]\n      }\n    }\n  ]\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "InscricoesTurma",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/InscricoesTurma/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "InscricoesTurma",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "InscricoesTurma",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/InscricoesTurma/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "InscricoesTurma",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "InscricoesTurma",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/InscricoesTurma/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "InscricoesTurma",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/InscricoesTurma/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "InscricoesTurma",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/InscricoesTurma",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/InscricoesTurma",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "InscricoesTurma"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/InscricoesTurma",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "InscricoesTurma"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idInscricao_turma\": 3277,\n    \"dataInscricao\": \"2007-08-30T19:02:11.927Z\",\n    \"ativo\": false,\n    \"idAluno\": 787,\n    \"aluno\": {\n      \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n    },\n    \"idTurma\": 8248,\n    \"turma\": {\n      \"idTurma\": 3726,\n      \"nomeTurma\": \"string\",\n      \"modalidade\": \"string\",\n      \"diaSemana\": \"string\",\n      \"horario\": \"09:59:11.775Z\",\n      \"capacidadeMaxima\": 6102,\n      \"idInstrutor\": 7372,\n      \"instrutor\": {\n        \"idInstrutor\": 6233,\n        \"nome\": \"string\",\n        \"email\": \"string\",\n        \"especialidade\": \"string\",\n        \"dataContratacao\": \"1987-10-07T23:31:15.774Z\",\n        \"cref\": \"string\",\n        \"ativo\": false,\n        \"turmas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n          }\n        ]\n      },\n      \"inscricoesTurma\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n        }\n      ]\n    }\n  },\n  {\n    \"idInscricao_turma\": 5882,\n    \"dataInscricao\": \"2002-12-16T06:21:59.727Z\",\n    \"ativo\": true,\n    \"idAluno\": 2303,\n    \"aluno\": {\n      \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n    },\n    \"idTurma\": 9532,\n    \"turma\": {\n      \"idTurma\": 1334,\n      \"nomeTurma\": \"string\",\n      \"modalidade\": \"string\",\n      \"diaSemana\": \"string\",\n      \"horario\": \"20:21:05.424Z\",\n      \"capacidadeMaxima\": 2380,\n      \"idInstrutor\": 6024,\n      \"instrutor\": {\n        \"idInstrutor\": 5520,\n        \"nome\": \"string\",\n        \"email\": \"string\",\n        \"especialidade\": \"string\",\n        \"dataContratacao\": \"1990-01-23T17:29:15.302Z\",\n        \"cref\": \"string\",\n        \"ativo\": true,\n        \"turmas\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n          }\n        ]\n      },\n      \"inscricoesTurma\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n        }\n      ]\n    }\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/InscricoesTurma",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/InscricoesTurma",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "InscricoesTurma"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/InscricoesTurma",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "InscricoesTurma"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idInscricao_turma\": 1455,\n  \"dataInscricao\": \"2011-11-08T16:51:48.359Z\",\n  \"ativo\": false,\n  \"idAluno\": 2329,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idTurma\": 1840,\n  \"turma\": {\n    \"idTurma\": 2649,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"21:43:14.971Z\",\n    \"capacidadeMaxima\": 3487,\n    \"idInstrutor\": 1067,\n    \"instrutor\": {\n      \"idInstrutor\": 1729,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1978-08-17T05:04:09.051Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Instrutores",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Instrutores/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Instrutores/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Instrutores",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Instrutores/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Instrutores",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Instrutores/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Instrutores/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Instrutores",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Instrutores/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Instrutores",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Instrutores/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Instrutores/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Instrutores",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Instrutores/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Instrutores",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Instrutores",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Instrutores",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Instrutores"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Instrutores",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Instrutores"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idInstrutor\": 3042,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1985-07-17T21:34:47.915Z\",\n    \"cref\": \"string\",\n    \"ativo\": true,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  {\n    \"idInstrutor\": 6211,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1963-09-08T08:34:35.191Z\",\n    \"cref\": \"string\",\n    \"ativo\": true,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Instrutores",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Instrutores",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Instrutores"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Instrutores",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Instrutores"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idInstrutor\": 7602,\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"especialidade\": \"string\",\n  \"dataContratacao\": \"1998-07-06T05:15:38.724Z\",\n  \"cref\": \"string\",\n  \"ativo\": true,\n  \"turmas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n    }\n  ]\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Matriculas",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Matriculas/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Matriculas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Matriculas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Matriculas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Matriculas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Matriculas/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Matriculas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Matriculas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Matriculas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Matriculas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Matriculas/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Matriculas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Matriculas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Matriculas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Matriculas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Matriculas",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Matriculas",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Matriculas"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Matriculas",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Matriculas"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idMatricula\": 3750,\n    \"dataInicio\": \"1992-08-07T11:36:02.123Z\",\n    \"dataFim\": \"1990-09-08T01:21:32.397Z\",\n    \"situacao\": \"string\",\n    \"valorPago\": 9915.85678760155,\n    \"idAluno\": 4052,\n    \"aluno\": {\n      \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n    },\n    \"idPlano\": 9418,\n    \"plano\": {\n      \"idPlano\": 3301,\n      \"nomePlano\": \"string\",\n      \"valorMensalidade\": 646.7872967207544,\n      \"duracaoMeses\": 5164,\n      \"incluiAulasColetivas\": false,\n      \"incluiAcompanhamentoNutricional\": true,\n      \"ativo\": true,\n      \"matriculas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n        }\n      ]\n    }\n  },\n  {\n    \"idMatricula\": 3248,\n    \"dataInicio\": \"1987-04-12T15:14:55.324Z\",\n    \"dataFim\": \"2001-01-29T08:17:48.149Z\",\n    \"situacao\": \"string\",\n    \"valorPago\": 5746.3556417614145,\n    \"idAluno\": 2637,\n    \"aluno\": {\n      \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n    },\n    \"idPlano\": 1990,\n    \"plano\": {\n      \"idPlano\": 7454,\n      \"nomePlano\": \"string\",\n      \"valorMensalidade\": 1676.7455393798102,\n      \"duracaoMeses\": 9265,\n      \"incluiAulasColetivas\": false,\n      \"incluiAcompanhamentoNutricional\": true,\n      \"ativo\": true,\n      \"matriculas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n        }\n      ]\n    }\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Matriculas",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Matriculas",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Matriculas"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Matriculas",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Matriculas"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idMatricula\": 5667,\n  \"dataInicio\": \"1978-10-21T09:46:40.439Z\",\n  \"dataFim\": \"1975-06-04T11:48:33.381Z\",\n  \"situacao\": \"string\",\n  \"valorPago\": 2048.798383036734,\n  \"idAluno\": 1009,\n  \"aluno\": {\n    \"value\": \"<Circular reference to #/components/schemas/Aluno detected>\"\n  },\n  \"idPlano\": 5294,\n  \"plano\": {\n    \"idPlano\": 7058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 4607.849496273766,\n    \"duracaoMeses\": 6827,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Planos",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Planos/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Planos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Planos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Planos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Planos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Planos/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Planos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Planos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Planos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Planos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Planos/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Planos/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Planos",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Planos/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Planos",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Planos",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Planos",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Planos"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Planos",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Planos"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idPlano\": 4772,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 2430.184405281034,\n    \"duracaoMeses\": 5613,\n    \"incluiAulasColetivas\": true,\n    \"incluiAcompanhamentoNutricional\": true,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  },\n  {\n    \"idPlano\": 8058,\n    \"nomePlano\": \"string\",\n    \"valorMensalidade\": 9360.367355582062,\n    \"duracaoMeses\": 5172,\n    \"incluiAulasColetivas\": false,\n    \"incluiAcompanhamentoNutricional\": false,\n    \"ativo\": false,\n    \"matriculas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n      }\n    ]\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Planos",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Planos",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Planos"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Planos",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Planos"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idPlano\": 6749,\n  \"nomePlano\": \"string\",\n  \"valorMensalidade\": 5730.467548827794,\n  \"duracaoMeses\": 7027,\n  \"incluiAulasColetivas\": true,\n  \"incluiAcompanhamentoNutricional\": false,\n  \"ativo\": false,\n  \"matriculas\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/Matricula detected>\"\n    }\n  ]\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turmas",
+          "item": [
+            {
+              "name": "{id}",
+              "item": [
+                {
+                  "name": "/api/Turmas/:id",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Turmas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Turmas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Turmas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Turmas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Turmas/:id",
+                  "request": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Turmas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Turmas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}",
+                          "options": {
+                            "raw": {
+                              "headerFamily": "json",
+                              "language": "json"
+                            }
+                          }
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Turmas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Turmas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "/api/Turmas/:id",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Turmas/:id",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Turmas",
+                        ":id"
+                      ],
+                      "variable": [
+                        {
+                          "key": "id",
+                          "value": "6641"
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/api/Turmas/:id",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "api",
+                            "Turmas",
+                            ":id"
+                          ],
+                          "variable": [
+                            {
+                              "key": "id",
+                              "value": "6641"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "text",
+                      "header": [],
+                      "cookie": [],
+                      "body": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "/api/Turmas",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/Turmas",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Turmas"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Turmas",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Turmas"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"idTurma\": 5380,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"05:02:47.248Z\",\n    \"capacidadeMaxima\": 8089,\n    \"idInstrutor\": 7097,\n    \"instrutor\": {\n      \"idInstrutor\": 6900,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1953-04-28T08:07:06.323Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  },\n  {\n    \"idTurma\": 8392,\n    \"nomeTurma\": \"string\",\n    \"modalidade\": \"string\",\n    \"diaSemana\": \"string\",\n    \"horario\": \"12:25:01.869Z\",\n    \"capacidadeMaxima\": 3296,\n    \"idInstrutor\": 9384,\n    \"instrutor\": {\n      \"idInstrutor\": 9169,\n      \"nome\": \"string\",\n      \"email\": \"string\",\n      \"especialidade\": \"string\",\n      \"dataContratacao\": \"1962-06-21T04:32:00.183Z\",\n      \"cref\": \"string\",\n      \"ativo\": true,\n      \"turmas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n        }\n      ]\n    },\n    \"inscricoesTurma\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n      }\n    ]\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "/api/Turmas",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/Turmas",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "Turmas"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/api/Turmas",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "api",
+                        "Turmas"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"idTurma\": 2673,\n  \"nomeTurma\": \"string\",\n  \"modalidade\": \"string\",\n  \"diaSemana\": \"string\",\n  \"horario\": \"04:01:13.425Z\",\n  \"capacidadeMaxima\": 5419,\n  \"idInstrutor\": 3111,\n  \"instrutor\": {\n    \"idInstrutor\": 4448,\n    \"nome\": \"string\",\n    \"email\": \"string\",\n    \"especialidade\": \"string\",\n    \"dataContratacao\": \"1973-08-14T10:16:08.673Z\",\n    \"cref\": \"string\",\n    \"ativo\": false,\n    \"turmas\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Turma detected>\"\n      }\n    ]\n  },\n  \"inscricoesTurma\": [\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    },\n    {\n      \"value\": \"<Circular reference to #/components/schemas/InscricaoTurma detected>\"\n    }\n  ]\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "/"
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-﻿namespace AcademiaAPI.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace AcademiaAPI.Models;
 
 public class Matricula
 {
@@ -8,10 +10,11 @@ public class Matricula
     public string Situacao { get; set; } = string.Empty;
     public decimal ValorPago { get; set; }
 
-    // FKs
     public int IdAluno { get; set; }
-    public Aluno Aluno { get; set; } = null!;
+    [JsonIgnore]
+    public Aluno? Aluno { get; set; }
 
     public int IdPlano { get; set; }
-    public Plano Plano { get; set; } = null!;
+    [JsonIgnore]
+    public Plano? Plano { get; set; }
 }

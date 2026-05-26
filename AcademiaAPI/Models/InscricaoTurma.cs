@@ -1,4 +1,6 @@
-﻿namespace AcademiaAPI.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace AcademiaAPI.Models;
 
 public class InscricaoTurma
 {
@@ -6,10 +8,11 @@ public class InscricaoTurma
     public DateTime DataInscricao { get; set; }
     public bool Ativo { get; set; } = true;
 
-    // FKs
     public int IdAluno { get; set; }
-    public Aluno Aluno { get; set; } = null!;
+    [JsonIgnore]
+    public Aluno? Aluno { get; set; }
 
     public int IdTurma { get; set; }
-    public Turma Turma { get; set; } = null!;
+    [JsonIgnore]
+    public Turma? Turma { get; set; }
 }
